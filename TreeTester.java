@@ -13,6 +13,6 @@ public class TreeTester {
 		// System.out.println(tree.findMin(root).data);
 		tree.remove(root, 5);
 		tree.preOrder(root, 0);
-		
+
 	} 
 }

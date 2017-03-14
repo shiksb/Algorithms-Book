@@ -92,14 +92,13 @@ public class BinaryTree {
 		} else if(root.left != null && root.right != null) {
 			root.data = findMin(root.right).data;
 			root.right = remove(root.right, root.data);
-		}
-
-		else {
+		} else {
 			root = (root.left != null) ? root.left : root.right;
 		}
 
 		return root;
 
 	}
+
 
 }
