@@ -8,11 +8,13 @@ public class TreeTester {
 		tree.insert(root, 1);
 		tree.insert(root, 4);
 		tree.insert(root, 7);
-		tree.preOrder(root, 0);
+		// tree.preOrder(root, 0);
 		// System.out.println(tree.findMax(root).data);
 		// System.out.println(tree.findMin(root).data);
 		tree.remove(root, 5);
 		tree.preOrder(root, 0);
+
+		System.out.println(tree.findNode(7, root).left.data);
 
 	} 
 }

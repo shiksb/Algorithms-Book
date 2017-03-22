@@ -100,5 +100,21 @@ public class BinaryTree {
 
 	}
 
+	public TreeNode findNode(int data, TreeNode root) {
+		if(root != null) {
+			if(root.data == data) {
+				return root;
+			} else {
+			TreeNode node = findNode(data, root.left);
+			if(node == null) {
+				node = findNode(data, root.right);
+			} 
+			return node;
+			} 
+		} else {
+			return null;
+		}
+    }
+
 
 }
